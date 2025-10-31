@@ -463,6 +463,8 @@ textarea.form-control {
 .navigation {
   /* background: linear-gradient(to right, transparent 50%, #ffbc3b 50%); */
   transition: 0.2s ease;
+
+  background: #ffbc3b;
 }
 @media (max-width: 991px) {
   .navigation {
