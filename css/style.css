@@ -287,8 +287,9 @@ a h4:hover {
   width: 100%;
   top: 0;
   left: 0;
-  background: #1a1a37;
-  opacity: 0.8;
+  background: darkslategray;
+  opacity: 0.9;
+  filter: blur(0.8);
 }
 
 .outline-0 {
@@ -463,18 +464,19 @@ textarea.form-control {
 .navigation {
   /* background: linear-gradient(to right, transparent 50%, #ffbc3b 50%); */
   transition: 0.2s ease;
-
-  background: #ffbc3b;
+background: black;
+  height: 100px;
 }
+ 
 @media (max-width: 991px) {
   .navigation {
-    background: #1a1a37;
+    background: black;
   }
 }
 
 @media (max-width: 991px) {
   .navbar-collapse {
-    background: #1a1a37;
+    background: black;
     max-height: calc(100vh - 80px);
   }
   .navbar-collapse.show {
@@ -489,12 +491,12 @@ textarea.form-control {
 @media (max-width: 991px) {
   .navbar-nav {
     padding-left: 0;
-    background: #1a1a37;
+    background: black;
   }
 }
 
 .nav-bg {
-  background-color: #1a1a37;
+  background-color: black;
 }
 
 .nav-item {
@@ -654,15 +656,15 @@ link:focus,
 }
 
 .hero-section {
-  padding: 250px 0 290px;
+  padding: 20px 0 190px;
 }
 @media (max-width: 991px) {
   .hero-section {
-    padding: 250px 0 200px;
+    padding: 20px 0 190px;
   }
 }
 
-.hero-slider .prevArrow,
+/* .hero-slider .prevArrow,
 .hero-slider .nextArrow {
   position: absolute;
   bottom: -123px;
@@ -710,7 +712,7 @@ link:focus,
   background: rgba(255, 255, 255, 0.5);
   border: 0;
   outline: 0;
-}
+} */
 
 /* banner feature */
 .feature-icon {
@@ -905,7 +907,7 @@ link:focus,
 }
 
 .bg-footer {
-  background-color: #182b45;
+  background-color: black;
 }
 
 .logo-footer {
