@@ -656,11 +656,11 @@ link:focus,
 }
 
 .hero-section {
-  padding: 20px 0 190px;
+  padding: 20px 0 120px;
 }
 @media (max-width: 991px) {
   .hero-section {
-    padding: 20px 0 190px;
+    padding: 20px 0 120px;
   }
 }
 
