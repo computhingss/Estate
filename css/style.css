@@ -933,3 +933,378 @@ link:focus,
   color: #ffbc3b;
 }
 /*# sourceMappingURL=style.css.map */
+
+
+  body {
+    padding-top: 80px;
+    /* navbar yüksekliği kadar */
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+    /* navbar yüksekliği kadar boşluk bırakır */
+  }
+
+
+  .col-lg-4.col-sm-6 {
+    margin-bottom: 2rem !important;
+  }
+
+  /* Sosyal ikonlar */
+  .social-icons a {
+    margin-left: 0.5rem;
+    color: #555;
+    transition: color 0.2s, transform 0.3s ease;
+  }
+
+  .social-icons a:hover {
+    color: var(--accent, #0d6efd);
+    transform: scale(1.2);
+  }
+
+  /* Projelerimiz bölümündeki görseller */
+  .card-img-top {
+    width: 100%;
+    height: 250px;
+    /* sabit yükseklik: istersen 200px veya 300px yapabilirsin */
+    object-fit: cover;
+    /* oran koruyarak kırpma yapar */
+    border-radius: 0;
+  }
+
+
+  .btn-primary:hover {
+    background-color: #0b5ed7;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+  }
+
+  /* Genel kart stili */
+  .card {
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+    /* tüm kartlar eşit boyda olur */
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Hover efekti */
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+  }
+
+  /* Görsel */
+  .card-img-top {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    object-fit: cover;
+    height: 230px;
+    width: 100%;
+    transition: transform 0.4s ease;
+  }
+
+  .card:hover .card-img-top {
+    transform: scale(1.04);
+    filter: brightness(0.95);
+  }
+
+  /* İçerik */
+  .card-body {
+    flex-grow: 1;
+    /* yazı miktarı az olsa bile kart yüksekliği sabit kalır */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  /* Başlık */
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffbc3b;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+  }
+
+  .card-title:hover {
+    color: #ffbc3b;
+  }
+
+  /* Metin */
+  .card-text {
+    flex-grow: 1;
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Buton */
+  .card .btn {
+    align-self: flex-start;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+  .card .btn-info {
+    background: linear-gradient(90deg, #0d6efd, #ffbc3b);
+    border: none;
+    color: #fff;
+  }
+
+  .card .btn-info:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+
+
+  #hizmetler {
+    padding: 80px 0;
+  }
+
+  .service-card {
+    background: #fff;
+    transition: all 0.3s ease;
+    border: 1px solid #eaeaea;
+  }
+
+
+
+  .icon-wrapper {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #0d6efd 0%, #4b9dff 100%);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 2rem;
+    transition: all 0.4s ease;
+  }
+
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  }
+
+  .service-card:hover .icon-wrapper {
+    transform: scale(1.1) rotate(5deg);
+    background: linear-gradient(135deg, #0046c7 0%, #2b79ff 100%);
+  }
+
+  @media (max-width: 768px) {
+    .service-card {
+      padding: 2.5rem 1.5rem;
+    }
+  }
+
+
+  .whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 50px;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 32px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: all 0.3s ease;
+  }
+
+  .whatsapp-float i {
+    line-height: 60px;
+  }
+
+  .whatsapp-float:hover {
+    transform: scale(1.1);
+    background-color: #1ebd5b;
+  }
+
+
+  .phone-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 95px;
+    /* WhatsApp ikonunun hemen üstünde */
+    right: 25px;
+    background-color: #0d6efd;
+    /* mavi */
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 28px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: all 0.3s ease;
+  }
+
+  .phone-float i {
+    line-height: 60px;
+  }
+
+  .phone-float:hover {
+    transform: scale(1.1);
+    background-color: #004bbd;
+  }
+
+  /* ✨ Pulse + Ripple animasyonları ✨ */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.4);
+    }
+
+    70% {
+      transform: scale(1.08);
+      box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+  }
+
+  @keyframes ripple {
+    0% {
+      transform: scale(1);
+      opacity: 0.5;
+    }
+
+    100% {
+      transform: scale(1.9);
+      opacity: 0;
+    }
+  }
+
+  .whatsapp-float,
+  .phone-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 28px;
+    color: white;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    animation: pulse 2.5s infinite ease-in-out;
+    overflow: visible;
+  }
+
+  /* Ripple efekti */
+  .whatsapp-float::after,
+  .phone-float::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.35);
+    animation: ripple 2.5s infinite ease-out;
+  }
+
+  /* Konum ve renkler */
+  .whatsapp-float {
+    bottom: 25px;
+    right: 25px;
+    background-color: #25d366;
+  }
+
+  .phone-float {
+    bottom: 95px;
+    right: 25px;
+    background-color: #0d6efd;
+  }
+
+  /* Hover durumu */
+  .whatsapp-float:hover,
+  .phone-float:hover {
+    transform: scale(1.15);
+    filter: brightness(1.1);
+  }
+
+  .whatsapp-float i,
+  .phone-float i {
+    line-height: 60px;
+    position: relative;
+    z-index: 2;
+  }
+
+
+
+
+
+
+  .hero-section {
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* BLUR KATMANI */
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("images/banner/banner-1.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(6px);
+    transform: scale(1.05);
+    z-index: 0;
+  }
+
+  /* RENK OVERLAY KATMANI */
+  .hero-section::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(3, 0, 0, 0.644);
+    /* buradan rengi ve opaklığı ayarlayabilirsin */
+    z-index: 1;
+  }
+
+  /* İÇERİK */
+  .hero-section .container {
+    position: relative;
+    z-index: 2;
+  }
+
+
+  .status-tag {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  .ongoing {
+    background: linear-gradient(90deg, #0d6efd, #ffbc3b);
+    border: none;
+  }
+
+  .completed {
+    background-color: #f39c12;
+  }
+
+  .card-body {
+    text-align: left;
+
+  }

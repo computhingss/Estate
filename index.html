@@ -7,341 +7,74 @@
   <!-- Basic Page Needs
 	================================================== -->
   <meta charset="utf-8">
-  <title>FİDANAY İNŞAAT</title>
-
+  <title>Fidanay İnşaat</title>
   <!-- Mobile Specific Metas
 	================================================== -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="Fidanay İnşaat | İstanbul genelinde tamamlanan konut projelerimiz. Başakşehir, Sefaköy, Halkalı ve daha fazlası.">
+  <meta name="description"
+    content="Fidanay İnşaat, İstanbul genelinde güvenli ve modern konut projeleri üretir. Başakşehir, Sefaköy, Halkalı ve çevresinde kaliteli yapılar.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <meta name="author" content="Themefisher">
-  <meta name="generator" content="Themefisher Educenter HTML Template v1.0">
+  <meta name="author" content="Fidanay İnşaat">
+  <meta name="keywords"
+    content="Fidanay İnşaat, İstanbul inşaat, konut projeleri, modern yaşam alanları, Başakşehir, Halkalı, Sefaköy">
 
-  <!-- theme meta -->
-  <meta name="theme-name" content="educenter" />
+  <link rel="canonical" href="https://www.fidanayinsaat.com/">
 
-  <!-- ** Plugins Needed for the Project ** -->
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
-  <!-- slick slider -->
-  <link rel="stylesheet" href="plugins/slick/slick.css">
-  <!-- themefy-icon -->
-  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
-  <!-- animation css -->
-  <link rel="stylesheet" href="plugins/animate/animate.css">
-  <!-- aos -->
-  <link rel="stylesheet" href="plugins/aos/aos.css">
-  <!-- venobox popup -->
-  <link rel="stylesheet" href="plugins/venobox/venobox.css">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Fidanay İnşaat">
+  <meta property="og:description"
+    content="Fidanay İnşaat projeleri, hizmetleri ve güncel bilgiler. Kaliteli ve güvenilir inşaat çözümleri.">
+  <meta property="og:url" content="https://www.fidanayinsaat.com/">
+  <meta property="og:image" content="https://www.fidanayinsaat.com/images/logo.svg">
 
-  <!-- Main Stylesheet -->
-  <link href="css/style.css" rel="stylesheet">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Fidanay İnşaat">
+  <meta name="twitter:description"
+    content="Fidanay İnşaat projeleri, hizmetleri ve güncel bilgiler. Kaliteli ve güvenilir inşaat çözümleri.">
+  <meta name="twitter:image" content="https://www.fidanayinsaat.com/images/logo.svg">
 
-  <!--Favicon-->
-  <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
-  <link rel="icon" href="images/logo.jpg" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-
-
-  <style>
-
-    body {
-  padding-top: 80px; /* navbar yüksekliği kadar */
-}
-
-    html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 90px; /* navbar yüksekliği kadar boşluk bırakır */
-}
-
-
-.col-lg-4.col-sm-6 {
-  margin-bottom: 2rem !important;
-}
-
-    /* Sosyal ikonlar */
-    .social-icons a {
-      margin-left: 0.5rem;
-      color: #555;
-      transition: color 0.2s, transform 0.3s ease;
-    }
-
-    .social-icons a:hover {
-      color: var(--accent, #0d6efd);
-      transform: scale(1.2);
-    }
-
-    /* Projelerimiz bölümündeki görseller */
-    .card-img-top {
-      width: 100%;
-      height: 250px;
-      /* sabit yükseklik: istersen 200px veya 300px yapabilirsin */
-      object-fit: cover;
-      /* oran koruyarak kırpma yapar */
-      border-radius: 0;
-    }
-
-
-    .btn-primary:hover {
-  background-color: #0b5ed7;
-  transform: scale(1.05);
-  transition: all 0.3s ease;
-}
-
-/* Genel kart stili */
-.card {
-  border: none;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  height: 100%; /* tüm kartlar eşit boyda olur */
-  display: flex;
-  flex-direction: column;
-}
-
-/* Hover efekti */
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
-}
-
-/* Görsel */
-.card-img-top {
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
-  object-fit: cover;
-  height: 230px;
-  width: 100%;
-  transition: transform 0.4s ease;
-}
-
-.card:hover .card-img-top {
-  transform: scale(1.04);
-  filter: brightness(0.95);
-}
-
-/* İçerik */
-.card-body {
-  flex-grow: 1; /* yazı miktarı az olsa bile kart yüksekliği sabit kalır */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-/* Başlık */
-.card-title {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #ffbc3b;
-  margin-bottom: 0.5rem;
-  transition: color 0.3s ease;
-}
-
-.card-title:hover {
-  color: #ffbc3b;
-}
-
-/* Metin */
-.card-text {
-  flex-grow: 1;
-  color: #555;
-  font-size: 0.95rem;
-  margin-bottom: 1rem;
-}
-
-/* Buton */
-.card .btn {
-  align-self: flex-start;
-  border-radius: 10px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-
-.card .btn-info {
-  background: linear-gradient(90deg, #0d6efd, #ffbc3b);
-  border: none;
-  color: #fff;
-}
-
-.card .btn-info:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-
-
-#hizmetler {
-  padding: 80px 0;
-}
-
-.service-card {
-  background: #fff;
-  transition: all 0.3s ease;
-  border: 1px solid #eaeaea;
-}
-
-
-
-  .icon-wrapper {
-    width: 80px;
-    height: 80px;
-    background: linear-gradient(135deg, #0d6efd 0%, #4b9dff 100%);
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 2rem;
-    transition: all 0.4s ease;
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@type": "Organization",
+    "name": "Fidanay İnşaat",
+    "url": "https://www.fidanayinsaat.com",
+    "logo": "https://www.fidanayinsaat.com/images/logo.svg",
+    "sameAs": [
+      "https://www.facebook.com/famsaninsaatgayrimenkul",
+      "https://www.instagram.com/fidanayinsaat",
+    ]
   }
-
- .service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
-  }
-
-  .service-card:hover .icon-wrapper {
-    transform: scale(1.1) rotate(5deg);
-    background: linear-gradient(135deg, #0046c7 0%, #2b79ff 100%);
-  }
-
-  @media (max-width: 768px) {
-    .service-card {
-      padding: 2.5rem 1.5rem;
-    }
-  }
+  </script>
+</head>
 
 
-.whatsapp-float {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 25px;
-  right: 25px;
-  background-color: #25d366;
-  color: white;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 32px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-  z-index: 1000;
-  transition: all 0.3s ease;
-}
+<!-- ** Plugins Needed for the Project ** -->
+<!-- Bootstrap -->
+<link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+<!-- slick slider -->
+<link rel="stylesheet" href="plugins/slick/slick.css">
+<!-- themefy-icon -->
+<link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+<!-- animation css -->
+<link rel="stylesheet" href="plugins/animate/animate.css">
+<!-- aos -->
+<link rel="stylesheet" href="plugins/aos/aos.css">
+<!-- venobox popup -->
+<link rel="stylesheet" href="plugins/venobox/venobox.css">
 
-.whatsapp-float i {
-  line-height: 60px;
-}
+<!-- Main Stylesheet -->
+<link href="css/style.css" rel="stylesheet">
 
-.whatsapp-float:hover {
-  transform: scale(1.1);
-  background-color: #1ebd5b;
-}
+<!--Favicon-->
+<link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
+<link rel="icon" href="images/logo.jpg" type="image/x-icon">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
-
-.phone-float {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 95px; /* WhatsApp ikonunun hemen üstünde */
-  right: 25px;
-  background-color: #0d6efd; /* mavi */
-  color: white;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 28px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-  z-index: 1000;
-  transition: all 0.3s ease;
-}
-
-.phone-float i {
-  line-height: 60px;
-}
-
-.phone-float:hover {
-  transform: scale(1.1);
-  background-color: #004bbd;
-}
-
-/* ✨ Pulse + Ripple animasyonları ✨ */
-@keyframes pulse {
-  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.4); }
-  70% { transform: scale(1.08); box-shadow: 0 0 0 10px rgba(0, 0, 0, 0); }
-  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); }
-}
-
-@keyframes ripple {
-  0% { transform: scale(1); opacity: 0.5; }
-  100% { transform: scale(1.9); opacity: 0; }
-}
-
-.whatsapp-float,
-.phone-float {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 28px;
-  color: white;
-  z-index: 1000;
-  transition: all 0.3s ease;
-  animation: pulse 2.5s infinite ease-in-out;
-  overflow: visible;
-}
-
-/* Ripple efekti */
-.whatsapp-float::after,
-.phone-float::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.35);
-  animation: ripple 2.5s infinite ease-out;
-}
-
-/* Konum ve renkler */
-.whatsapp-float {
-  bottom: 25px;
-  right: 25px;
-  background-color: #25d366;
-}
-
-.phone-float {
-  bottom: 95px;
-  right: 25px;
-  background-color: #0d6efd;
-}
-
-/* Hover durumu */
-.whatsapp-float:hover,
-.phone-float:hover {
-  transform: scale(1.15);
-  filter: brightness(1.1);
-}
-
-.whatsapp-float i,
-.phone-float i {
-  line-height: 60px;
-  position: relative;
-  z-index: 2;
-}
-
-
-
-
-
-
- .hero-section {
-    position: relative;
-    overflow: hidden;
-  }
-
+<style>
+  
   /* BLUR KATMANI */
   .hero-section::before {
     content: "";
@@ -355,40 +88,8 @@
     z-index: 0;
   }
 
-  /* RENK OVERLAY KATMANI */
-  .hero-section::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(3, 0, 0, 0.644); /* buradan rengi ve opaklığı ayarlayabilirsin */
-    z-index: 1;
-  }
 
-  /* İÇERİK */
-  .hero-section .container {
-    position: relative;
-    z-index: 2;
-  }
-
-
-  .status-tag {
-  display: inline-block;
-  padding: 12px 20px;
-  border-radius: 8px;
-  color: #fff;
-  font-size: 0.8rem;
-  font-weight: 600;
-}
-.ongoing { background: linear-gradient(90deg, #0d6efd, #ffbc3b);
-  border: none; }
-.completed { background-color: #f39c12; }
-  
-.card-body{
-  text-align: left;
-  
-}
-
-  </style>
+</style> 
 
 
 </head>
@@ -423,13 +124,13 @@
               <li class="nav-item @@courses">
                 <a class="nav-link" href="#projeler">PROJELERİMİZ</a>
               </li>
-                <li class="nav-item @@courses">
+              <li class="nav-item @@courses">
                 <a class="nav-link" href="#hizmetler">HİZMETLERİMİZ</a>
               </li>
               <li class="nav-item @@events">
                 <a class="nav-link" href="#iletisim">İLETİŞİM</a>
               </li>
-              
+
 
 
 
@@ -437,25 +138,25 @@
             </ul>
 
             <div class="d-flex align-items-center ml-lg-3">
-  <a href="https://www.instagram.com/fidanayinsaat/" target="_blank" class="nav-icon nav-icon-effect"
-     style="font-size:1.4rem; color:#E1306C; padding:0.25rem;">
-    <i class="bi bi-instagram"></i>
-  </a>
-  <a href="https://www.facebook.com/famsaninsaatgayrimenkul/" target="_blank" class="nav-icon nav-icon-effect"
-     style="font-size:1.4rem; color:#1877F2; padding:0.25rem;">
-    <i class="bi bi-facebook"></i>
-  </a>
-  <a href="https://wa.me/905515991021" target="_blank" class="nav-icon nav-icon-effect"
-     style="font-size:1.4rem; color:#25D366; padding:0.25rem;">
-    <i class="bi bi-whatsapp"></i>
-  </a>
-  <a href="tel:+905515991021" class="nav-icon nav-icon-effect"
-     style="font-size:1.4rem; color:#0d6efd; padding:0.25rem;">
-    <i class="bi bi-telephone-fill"></i>
-  </a>
-</div>
+              <a href="https://www.instagram.com/fidanayinsaat/" target="_blank" class="nav-icon nav-icon-effect"
+                style="font-size:1.4rem; color:#E1306C; padding:0.25rem;">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="https://www.facebook.com/famsaninsaatgayrimenkul/" target="_blank"
+                class="nav-icon nav-icon-effect" style="font-size:1.4rem; color:#1877F2; padding:0.25rem;">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="https://wa.me/905515991021" target="_blank" class="nav-icon nav-icon-effect"
+                style="font-size:1.4rem; color:#25D366; padding:0.25rem;">
+                <i class="bi bi-whatsapp"></i>
+              </a>
+              <a href="tel:+905515991021" class="nav-icon nav-icon-effect"
+                style="font-size:1.4rem; color:#0d6efd; padding:0.25rem;">
+                <i class="bi bi-telephone-fill"></i>
+              </a>
+            </div>
 
-            
+
           </div>
         </nav>
       </div>
@@ -466,160 +167,172 @@
 
 
   <!-- hero slider -->
- <section class="hero-section overlay bg-cover" data-background="images/banner/banner-1.jpg">
-  <div class="container">
-    <div class="hero-static"> 
-      <div class="row justify-content-center text-center">
-        <div class="col-md-10 fade-in">
-          
-          <!-- LOGO -->
-          <div class="d-flex justify-content-center">
-            <img src="images/logo.png" alt="Fidanay İnşaat Logo" class="mb-3" style="max-width: 150px; margin-top: 100px;">
+  <section class="hero-section overlay bg-cover" data-background="images/banner/banner-1.jpg">
+    <div class="container">
+      <div class="hero-static">
+        <div class="row justify-content-center text-center">
+          <div class="col-md-10 fade-in">
+
+            <!-- LOGO -->
+            <div class="d-flex justify-content-center">
+              <img src="images/logo.png" alt="Fidanay İnşaat Logo" class="mb-3"
+                style="max-width: 150px; margin-top: 100px;">
+            </div>
+
+            <!-- MARKA ADI -->
+            <h1 class="text-white fw-bold">FİDANAY İNŞAAT</h1>
+
+            <!-- SLOGAN -->
+            <p class="text-white mb-4 fs-5">Güvenin Temelinde Biz Varız</p>
+
+            <!-- BUTON -->
+            <a href="#projeler" class="btn btn-primary text-dark">DEVAM EDEN PROJELERİMİZ</a>
+
           </div>
-
-          <!-- MARKA ADI -->
-          <h1 class="text-white fw-bold">FİDANAY İNŞAAT</h1>
-
-          <!-- SLOGAN -->
-          <p class="text-white mb-4 fs-5">Güvenin Temelinde Biz Varız</p>
-
-          <!-- BUTON -->
-          <a href="#projeler" class="btn btn-primary text-dark">DEVAM EDEN PROJELERİMİZ</a>
-
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- /hero slider -->
 
 
 
 
-<!-- HAKKIMIZDA -->
-<section class="section bg-light py-5">
-  <div class="container">
-    <div class="row align-items-center" style="text-align: justify;">
-    
+  <!-- HAKKIMIZDA -->
+  <section class="section bg-light py-5">
+    <div class="container">
+      <div class="row align-items-center" style="text-align: justify;">
 
-      <!-- Sağ taraf: Metin -->
-      <div class="col-lg-12" >
-        <h2 class="section-title" id="hakkimizda" style="text-align: center;">HAKKIMIZDA</h2>
-        <p class=" mt-3">
-Ziya Fidanay tarafından 1998 yılında kurulan FiDANAY İnşaat, güven, şeffaflık ve kaliteyi temel alarak modern yaşam alanları üretmektedir. Bizim için inşaat; sadece yapı inşa etmek değil, insanların huzurla yaşayabileceği ve geleceğini güvenle kurabileceği mekanlar oluşturma sorumluluğudur.
-        </p>
-        <p class=" mt-2">
-Projelerimizin her aşamasında açık ve dürüst bir çalışma anlayışı benimsiyor, müşterilerimizle güvene dayalı ilişkiler kurmaya önem veriyoruz. Vizyonumuz; güven, şeffaflık ve sürdürülebilirliği esas alarak sektöre değer katmak, misyonumuz ise modern ve sağlam yapılarla geleceğin şehirlerine katkı sunmaktır.
-        </p>
-        <p class="mt-2">
-“Güvenin temelinde biz varız.” diyerek, bugün olduğu gibi gelecekte de güven veren bir marka olma kararlılığımızı sürdürüyoruz.        </p>
-        
+
+        <!-- Sağ taraf: Metin -->
+        <div class="col-lg-12">
+          <h2 class="section-title" id="hakkimizda" style="text-align: center;">HAKKIMIZDA</h2>
+          <p class=" mt-3">
+            Ziya Fidanay tarafından 1998 yılında kurulan FiDANAY İnşaat, güven, şeffaflık ve kaliteyi temel alarak
+            modern yaşam alanları üretmektedir. Bizim için inşaat; sadece yapı inşa etmek değil, insanların huzurla
+            yaşayabileceği ve geleceğini güvenle kurabileceği mekanlar oluşturma sorumluluğudur.
+          </p>
+          <p class=" mt-2">
+            Projelerimizin her aşamasında açık ve dürüst bir çalışma anlayışı benimsiyor, müşterilerimizle güvene dayalı
+            ilişkiler kurmaya önem veriyoruz. Vizyonumuz; güven, şeffaflık ve sürdürülebilirliği esas alarak sektöre
+            değer katmak, misyonumuz ise modern ve sağlam yapılarla geleceğin şehirlerine katkı sunmaktır.
+          </p>
+          <p class="mt-2">
+            “Güvenin temelinde biz varız.” diyerek, bugün olduğu gibi gelecekte de güven veren bir marka olma
+            kararlılığımızı sürdürüyoruz. </p>
+
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- /HAKKIMIZDA -->
+  </section>
+  <!-- /HAKKIMIZDA -->
 
- <!-- =================================
+  <!-- =================================
      Hizmetlerimiz
 ================================== -->
-<section id="hizmetler" class="section py-5" style="background: linear-gradient(180deg, #f8f9fb 0%, #ffffff 100%);">
-  <div class="container">
-    <div class="row justify-content-center text-center mb-5">
-      <div class="col-lg-8">
-        <h2 class="section-title mb-3 fw-bold" style="color: #1b1f24;">HİZMETLERİMİZ</h2>
-        <p class="text-muted fs-5">
-          Fidanay İnşaat olarak her projede kalite, güven ve estetiği bir araya getiriyoruz.
-        </p>
+  <section id="hizmetler" class="section py-5" style="background: linear-gradient(180deg, #f8f9fb 0%, #ffffff 100%);">
+    <div class="container">
+      <div class="row justify-content-center text-center mb-5">
+        <div class="col-lg-8">
+          <h2 class="section-title mb-3 fw-bold" style="color: #1b1f24;">HİZMETLERİMİZ</h2>
+          <p class="text-muted fs-5">
+            Fidanay İnşaat olarak her projede kalite, güven ve estetiği bir araya getiriyoruz.
+          </p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Kat Karşılığı İnşaat -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card text-center p-5 rounded-4 h-100 border-0"
+            style="background: #fff; box-shadow: 0 8px 25px rgba(0,0,0,0.05); transition: all 0.35s ease;">
+            <div class="icon-wrapper mb-4 mx-auto">
+              <i class="bi-buildings"></i>
+            </div>
+            <h4 class="mb-3 fw-semibold text-dark">Kat Karşılığı İnşaat</h4>
+            <p class="text-secondary">
+              Arsa sahipleriyle anlaşarak projeyi üstleniyor, tamamlanan daireleri karşılıklı paylaşıyoruz.
+            </p>
+          </div>
+        </div>
+
+        <!-- Yarısı Bizden Dönüşüm -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card text-center p-5 rounded-4 h-100 border-0"
+            style="background: #fff; box-shadow: 0 8px 25px rgba(0,0,0,0.05); transition: all 0.35s ease;">
+            <div class="icon-wrapper mb-4 mx-auto">
+              <i class="bi-building-up"></i>
+            </div>
+            <h4 class="mb-3 fw-semibold text-dark">Yarısı Bizden Dönüşüm</h4>
+            <p class="text-secondary">
+              Devlet destekli kentsel dönüşüm sürecinde tüm resmi işlemleri ve inşaatı sizin adınıza yürütüyoruz.
+            </p>
+          </div>
+        </div>
+
+        <!-- Taahhütlü İnşaat -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card text-center p-5 rounded-4 h-100 border-0"
+            style="background: #fff; box-shadow: 0 8px 25px rgba(0,0,0,0.05); transition: all 0.35s ease;">
+            <div class="icon-wrapper mb-4 mx-auto">
+              <i class="bi-building-gear"></i>
+            </div>
+            <h4 class="mb-3 fw-semibold text-dark">Taahhütlü İnşaat</h4>
+            <p class="text-secondary">
+              Finansmanını sizin sağladığınız projeleri planlıyor ve anahtar teslim şekilde tamamlıyoruz.
+            </p>
+          </div>
+        </div>
+
+        <!-- Tadilat & Yenileme -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card text-center p-5 rounded-4 h-100 border-0"
+            style="background: #fff; box-shadow: 0 8px 25px rgba(0,0,0,0.05); transition: all 0.35s ease;">
+            <div class="icon-wrapper mb-4 mx-auto">
+              <i class="  bi bi-tools"></i>
+            </div>
+            <h4 class="mb-3 fw-semibold text-dark">Tadilat & Yenileme</h4>
+            <p class="text-secondary">
+              Konut ve iş yerlerinde yapısal tadilat, yenileme ve dekoratif uygulamaları profesyonel şekilde
+              gerçekleştiriyoruz.
+            </p>
+          </div>
+        </div>
+
+        <!-- Tasarım & Projelendirme -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card text-center p-5 rounded-4 h-100 border-0"
+            style="background: #fff; box-shadow: 0 8px 25px rgba(0,0,0,0.05); transition: all 0.35s ease;">
+            <div class="icon-wrapper mb-4 mx-auto">
+              <i class="bi bi-rulers"></i>
+            </div>
+            <h4 class="mb-3 fw-semibold text-dark">Tasarım & Projelendirme</h4>
+            <p class="text-secondary">
+              Müşteriye özel 2D-3D mimari proje, plan, render ve tasarım çözümleri sunuyoruz.
+            </p>
+          </div>
+        </div>
+
       </div>
     </div>
-
-    <div class="row g-4">
-
-      <!-- Kat Karşılığı İnşaat -->
-      <div class="col-lg-4 col-md-6">
-        <div class="service-card text-center p-5 rounded-4 h-100 border-0" style="background: #fff; box-shadow: 0 8px 25px rgba(0,0,0,0.05); transition: all 0.35s ease;">
-          <div class="icon-wrapper mb-4 mx-auto">
-            <i class="bi-buildings"></i>
-          </div>
-          <h4 class="mb-3 fw-semibold text-dark">Kat Karşılığı İnşaat</h4>
-          <p class="text-secondary">
-            Arsa sahipleriyle anlaşarak projeyi üstleniyor, tamamlanan daireleri karşılıklı paylaşıyoruz.
-          </p>
-        </div>
-      </div>
-
-      <!-- Yarısı Bizden Dönüşüm -->
-      <div class="col-lg-4 col-md-6">
-        <div class="service-card text-center p-5 rounded-4 h-100 border-0" style="background: #fff; box-shadow: 0 8px 25px rgba(0,0,0,0.05); transition: all 0.35s ease;">
-          <div class="icon-wrapper mb-4 mx-auto">
-            <i class="bi-building-up"></i>
-          </div>
-          <h4 class="mb-3 fw-semibold text-dark">Yarısı Bizden Dönüşüm</h4>
-          <p class="text-secondary">
-            Devlet destekli kentsel dönüşüm sürecinde tüm resmi işlemleri ve inşaatı sizin adınıza yürütüyoruz.
-          </p>
-        </div>
-      </div>
-
-      <!-- Taahhütlü İnşaat -->
-      <div class="col-lg-4 col-md-6">
-        <div class="service-card text-center p-5 rounded-4 h-100 border-0" style="background: #fff; box-shadow: 0 8px 25px rgba(0,0,0,0.05); transition: all 0.35s ease;">
-          <div class="icon-wrapper mb-4 mx-auto">
-            <i class="bi-building-gear"></i>
-          </div>
-          <h4 class="mb-3 fw-semibold text-dark">Taahhütlü İnşaat</h4>
-          <p class="text-secondary">
-            Finansmanını sizin sağladığınız projeleri planlıyor ve anahtar teslim şekilde tamamlıyoruz.
-          </p>
-        </div>
-      </div>
-
-      <!-- Tadilat & Yenileme -->
-      <div class="col-lg-4 col-md-6">
-        <div class="service-card text-center p-5 rounded-4 h-100 border-0" style="background: #fff; box-shadow: 0 8px 25px rgba(0,0,0,0.05); transition: all 0.35s ease;">
-          <div class="icon-wrapper mb-4 mx-auto">
-            <i class="  bi bi-tools"></i>
-          </div>
-          <h4 class="mb-3 fw-semibold text-dark">Tadilat & Yenileme</h4>
-          <p class="text-secondary">
-            Konut ve iş yerlerinde yapısal tadilat, yenileme ve dekoratif uygulamaları profesyonel şekilde gerçekleştiriyoruz.
-          </p>
-        </div>
-      </div>
-
-      <!-- Tasarım & Projelendirme -->
-      <div class="col-lg-4 col-md-6">
-        <div class="service-card text-center p-5 rounded-4 h-100 border-0" style="background: #fff; box-shadow: 0 8px 25px rgba(0,0,0,0.05); transition: all 0.35s ease;">
-          <div class="icon-wrapper mb-4 mx-auto">
-            <i class="bi bi-rulers"></i>
-          </div>
-          <h4 class="mb-3 fw-semibold text-dark">Tasarım & Projelendirme</h4>
-          <p class="text-secondary">
-            Müşteriye özel 2D-3D mimari proje, plan, render ve tasarım çözümleri sunuyoruz.
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
+  </section>
 
 
-  <!-- courses -->
+  <!-- projects -->
   <section class="section-sm">
     <div class="container">
-      
+
       <div class="row">
         <div class="col-12">
-          
+
           <div class="d-flex align-items-center section-title justify-content-center">
             <!-- <h2 class="mb-0 text-nowrap mr-3" id="projeler">PROJELERİMİZ</h2> -->
-                   
 
 
-             <h2 class="section-title mb-3 fw-bold" style="color: #1b1f24;" id="projeler">PROJELERİMİZ</h2>
+
+            <h2 class="section-title mb-3 fw-bold" style="color: #1b1f24;" id="projeler">PROJELERİMİZ</h2>
 
           </div>
         </div>
@@ -628,382 +341,385 @@ Projelerimizin her aşamasında açık ve dürüst bir çalışma anlayışı be
       <div class="row justify-content-center">
 
         <!--devam eden start-->
-<!-- KUŞ APT. -->
-<div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-  <div class="card border-0 rounded-0 hover-shadow">
-    <div class="card-img position-relative">
-      <img class="card-img-top rounded-0" src="images/projeler/kus.jpg" alt="Kuş Apartmanı Projesi">
-    </div>
-    <div class="card-body text-center"> <!-- text-center eklendi -->
-      
-      <!-- BAŞLIK -->
-      <h4 class="card-title">KUŞ APT. | 2025-2026</h4>
-      
-      <!-- AÇIKLAMA -->
-      <p class="card-text mb-4 text-start">
-        Kat sayısı | 5  <br>
-        Bağımsız bölüm no | 8 Konut <br>
-        Toplam inşaat alanı | 761.10 m² <br>
-        Adres | Sefaköy Söğütlüçeşme Mah. 1. Sinop Sokak (Diş Hastanesi yanı)
-      </p>
+        <!-- KUŞ APT. -->
+        <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+          <div class="card border-0 rounded-0 hover-shadow">
+            <div class="card-img position-relative">
+              <img class="card-img-top rounded-0" src="images/projeler/kus.jpg" alt="Kuş Apartmanı Projesi">
+            </div>
+            <div class="card-body text-center"> <!-- text-center eklendi -->
 
-      <!-- BUTON -->
-      <div class="d-flex justify-content-center">
-<span class="status-tag ongoing">DEVAM EDİYOR</span>      </div>
+              <!-- BAŞLIK -->
+              <h4 class="card-title">KUŞ APT. | 2025-2026</h4>
 
-    </div>
-  </div>
-</div>
+              <!-- AÇIKLAMA -->
+              <p class="card-text mb-4 text-start">
+                Kat sayısı | 5 <br>
+                Bağımsız bölüm no | 8 Konut <br>
+                Toplam inşaat alanı | 761.10 m² <br>
+                Adres | Sefaköy Söğütlüçeşme Mah. 1. Sinop Sokak (Diş Hastanesi yanı)
+              </p>
 
-<!-- DEMİREL APT. -->
-<div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-  <div class="card border-0 rounded-0 hover-shadow">
-    <div class="card-img position-relative">
-      <img class="card-img-top rounded-0" src="images/projeler/demirel.jpg" alt="Demirel Apartmanı Projesi">
-    </div>
-    <div class="card-body text-center">
-      <h4 class="card-title">DEMİREL APT. | 2025-2026</h4>
-      <p class="card-text mb-4 text-start">
-        Kat sayısı | 5  <br>
-        Bağımsız bölüm no | 8 Konut <br>
-        Toplam inşaat alanı | --- <br>
-        Adres | Sefaköy Söğütlüçeşme Mah. Kazım Karabekir Sokak
-      </p>
-      <div class="d-flex justify-content-center">
-<span class="status-tag ongoing">DEVAM EDİYOR</span>      </div>
-    </div>
-  </div>
-</div>
+              <!-- BUTON -->
+              <div class="d-flex justify-content-center">
+                <span class="status-tag ongoing">DEVAM EDİYOR</span>
+              </div>
 
-<!-- EREN SOKAK -->
-<div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-  <div class="card border-0 rounded-0 hover-shadow">
-    <div class="card-img position-relative">
-      <img class="card-img-top rounded-0" src="images/logo.jpg" alt="Eren Sokak Projesi">
-    </div>
-    <div class="card-body text-center">
-      <h4 class="card-title">EREN SOKAK | 2025-2026</h4>
-      <p class="card-text mb-4 text-start">
-        Kat sayısı | 7 <br>
-        Bağımsız bölüm no | 10 Konut<br>
-        Toplam inşaat alanı | --- <br>
-        Adres | Başakşehir Eren Sokak
-      </p>
-      <div class="d-flex justify-content-center">
-       <span class="status-tag ongoing">DEVAM EDİYOR</span>
-      </div>
-    </div>
-  </div>
-</div>
+            </div>
+          </div>
+        </div>
 
-<!-- GÜVEN APT. -->
-<div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-  <div class="card border-0 rounded-0 hover-shadow">
-    <div class="card-img position-relative">
-      <img class="card-img-top rounded-0" src="images/projeler/guven.jpg" alt="Güven Apartmanı Projesi">
-    </div>
-    <div class="card-body">
-     
-      <h4 class="card-title">GÜVEN APT. | 2025</h4>
-      <p class="card-text mb-4 text-start">
-        Kat sayısı | 5 <br>
-        Bağımsız bölüm no | 7 konut 1 işyeri <br>
-        Toplam inşaat alanı | 745 m² <br>
-        Adres | Mehmet Akif Mahallesi Nifer Sokak
-      </p>
-      <div class="d-flex justify-content-center">
-        <span class="status-tag ongoing">DEVAM EDİYOR</span>
-      </div>
-    </div>
-  </div>
-</div>
+        <!-- DEMİREL APT. -->
+        <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+          <div class="card border-0 rounded-0 hover-shadow">
+            <div class="card-img position-relative">
+              <img class="card-img-top rounded-0" src="images/projeler/demirel.jpg" alt="Demirel Apartmanı Projesi">
+            </div>
+            <div class="card-body text-center">
+              <h4 class="card-title">DEMİREL APT. | 2025-2026</h4>
+              <p class="card-text mb-4 text-start">
+                Kat sayısı | 5 <br>
+                Bağımsız bölüm no | 8 Konut <br>
+                Toplam inşaat alanı | --- <br>
+                Adres | Sefaköy Söğütlüçeşme Mah. Kazım Karabekir Sokak
+              </p>
+              <div class="d-flex justify-content-center">
+                <span class="status-tag ongoing">DEVAM EDİYOR</span>
+              </div>
+            </div>
+          </div>
+        </div>
 
-<!-- DEĞİRMEN SOKAK -->
-<div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-  <div class="card border-0 rounded-0 hover-shadow">
-    <div class="card-img position-relative">
-      <img class="card-img-top rounded-0" src="images/projeler/degirmen.jpg" alt="Değirmen Sokak Projesi">
-    </div>
-    <div class="card-body text-center">
-      <h4 class="card-title text-color">BAŞAKŞEHİR Değirmen Sokak | 2022</h4>
-      <p class="card-text mb-4 text-start">
-        Kat sayısı | 4 <br>
-        Bağımsız bölüm no | 12 Konut <br>
-        Toplam inşaat alanı | 1.229 m² <br>
-      </p>
-      <div class="d-flex justify-content-center">
-        <span class="status-tag completed">TAMAMLANDI</span>
-      </div>
-    </div>
-  </div>
-</div>
+        <!-- EREN SOKAK -->
+        <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+          <div class="card border-0 rounded-0 hover-shadow">
+            <div class="card-img position-relative">
+              <img class="card-img-top rounded-0" src="images/logo.jpg" alt="Eren Sokak Projesi">
+            </div>
+            <div class="card-body text-center">
+              <h4 class="card-title">EREN SOKAK | 2025-2026</h4>
+              <p class="card-text mb-4 text-start">
+                Kat sayısı | 7 <br>
+                Bağımsız bölüm no | 10 Konut<br>
+                Toplam inşaat alanı | --- <br>
+                Adres | Başakşehir Eren Sokak
+              </p>
+              <div class="d-flex justify-content-center">
+                <span class="status-tag ongoing">DEVAM EDİYOR</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- GÜVEN APT. -->
+        <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+          <div class="card border-0 rounded-0 hover-shadow">
+            <div class="card-img position-relative">
+              <img class="card-img-top rounded-0" src="images/projeler/guven.jpg" alt="Güven Apartmanı Projesi">
+            </div>
+            <div class="card-body">
+
+              <h4 class="card-title">GÜVEN APT. | 2025</h4>
+              <p class="card-text mb-4 text-start">
+                Kat sayısı | 5 <br>
+                Bağımsız bölüm no | 7 konut 1 işyeri <br>
+                Toplam inşaat alanı | 745 m² <br>
+                Adres | Mehmet Akif Mahallesi Nifer Sokak
+              </p>
+              <div class="d-flex justify-content-center">
+                <span class="status-tag ongoing">DEVAM EDİYOR</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DEĞİRMEN SOKAK -->
+        <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+          <div class="card border-0 rounded-0 hover-shadow">
+            <div class="card-img position-relative">
+              <img class="card-img-top rounded-0" src="images/projeler/degirmen.jpg" alt="Değirmen Sokak Projesi">
+            </div>
+            <div class="card-body text-center">
+              <h4 class="card-title text-color">BAŞAKŞEHİR Değirmen Sokak | 2022</h4>
+              <p class="card-text mb-4 text-start">
+                Kat sayısı | 4 <br>
+                Bağımsız bölüm no | 12 Konut <br>
+                Toplam inşaat alanı | 1.229 m² <br>
+              </p>
+              <div class="d-flex justify-content-center">
+                <span class="status-tag completed">TAMAMLANDI</span>
+              </div>
+            </div>
+          </div>
+        </div>
 
 
-<!--devam eden end-->
+        <!--devam eden end-->
 
 
         <!-- course item -->
 
-  <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-  <div class="card border-0 rounded-0 hover-shadow">
-    <div class="card-img position-relative">
-      <img class="card-img-top rounded-0" src="images/projeler/caglayan.jpg" alt="Değirmen Sokak Projesi">
-    </div>
-    <div class="card-body text-center">
-      <h4 class="card-title text-color">Başakşehir, Güvercintepe, Çağlayan Sokak | 2021</h4>
-      <p class="card-text mb-4 text-start">
-        Kat sayısı | 4 <br>
-        Bağımsız bölüm no | 8 Konut  <br>
-        Toplam inşaat alanı | 965.20 m²  <br>
-      </p>
-      <div class="d-flex justify-content-center">
-        <span class="status-tag completed">TAMAMLANDI</span>
-      </div>
-    </div>
-  </div>
-</div>
+        <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+          <div class="card border-0 rounded-0 hover-shadow">
+            <div class="card-img position-relative">
+              <img class="card-img-top rounded-0" src="images/projeler/caglayan.jpg" alt="Değirmen Sokak Projesi">
+            </div>
+            <div class="card-body text-center">
+              <h4 class="card-title text-color">Başakşehir, Güvercintepe, Çağlayan Sokak | 2021</h4>
+              <p class="card-text mb-4 text-start">
+                Kat sayısı | 4 <br>
+                Bağımsız bölüm no | 8 Konut <br>
+                Toplam inşaat alanı | 965.20 m² <br>
+              </p>
+              <div class="d-flex justify-content-center">
+                <span class="status-tag completed">TAMAMLANDI</span>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <!-- course item -->
 
-      <!-- SÜLEYMANOĞLU APARTMANI -->
-<div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-  <div class="card border-0 rounded-0 hover-shadow">
-    <div class="card-img position-relative">
-      <img class="card-img-top rounded-0" src="images/projeler/suleymanoglu.jpg" alt="Süleymanoğlu Apartmanı">
-    </div>
-    <div class="card-body text-center">
-      <h4 class="card-title text-color">KÜÇÜKÇEKMECE Süleymanoğlu Apt. | 2021</h4>
-      <p class="card-text mb-4 text-start">
-        Kat sayısı | 5 <br>
-        Bağımsız bölüm no | 16 Konut <br>
-        A Blok | 746,32 m² <br>
-        B Blok | 755,82 m² <br>
-        Toplam inşaat alanı | 1.502,14 m² <br>
-        Adres | Küçükçekmece Muammer Aksoy Cad.
-      </p>
-      <div class="d-flex justify-content-center">
-        <span class="status-tag completed">TAMAMLANDI</span>
+        <!-- SÜLEYMANOĞLU APARTMANI -->
+        <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+          <div class="card border-0 rounded-0 hover-shadow">
+            <div class="card-img position-relative">
+              <img class="card-img-top rounded-0" src="images/projeler/suleymanoglu.jpg" alt="Süleymanoğlu Apartmanı">
+            </div>
+            <div class="card-body text-center">
+              <h4 class="card-title text-color">KÜÇÜKÇEKMECE Süleymanoğlu Apt. | 2021</h4>
+              <p class="card-text mb-4 text-start">
+                Kat sayısı | 5 <br>
+                Bağımsız bölüm no | 16 Konut <br>
+                A Blok | 746,32 m² <br>
+                B Blok | 755,82 m² <br>
+                Toplam inşaat alanı | 1.502,14 m² <br>
+                Adres | Küçükçekmece Muammer Aksoy Cad.
+              </p>
+              <div class="d-flex justify-content-center">
+                <span class="status-tag completed">TAMAMLANDI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CIVRAZ APT. -->
+        <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+          <div class="card border-0 rounded-0 hover-shadow">
+            <div class="card-img position-relative">
+              <img class="card-img-top rounded-0" src="images/projeler/calikusu-civraz.jpg"
+                alt="Civraz Apartmanı Projesi">
+            </div>
+            <div class="card-body text-center">
+              <h4 class="card-title text-color">CIVRAZ APT. | 2021</h4>
+              <p class="card-text mb-4 text-start">
+                Kat sayısı | 4 <br>
+                Bağımsız bölüm no | 8 Konut <br>
+                Toplam inşaat alanı | 965.20 m² <br>
+                Adres | Başakşehir Güvercintepe Mah.
+              </p>
+              <div class="d-flex justify-content-center">
+                <span class="status-tag completed">TAMAMLANDI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ŞEN SOKAK -->
+        <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+          <div class="card border-0 rounded-0 hover-shadow">
+            <div class="card-img position-relative">
+              <img class="card-img-top rounded-0" src="images/projeler/sen-sokak.jpg" alt="Şen Sokak Projesi">
+            </div>
+            <div class="card-body text-center">
+              <h4 class="card-title text-color">BAŞAKŞEHİR Güvercintepe Şen Sokak | 2017</h4>
+              <p class="card-text mb-4 text-start">
+                Kat sayısı | 4 <br>
+                Bağımsız bölüm no | 8 Konut <br>
+                Toplam inşaat alanı | 588.25 m² <br>
+                Adres | Başakşehir Güvercintepe Şen Sokak
+              </p>
+              <div class="d-flex justify-content-center">
+                <span class="status-tag completed">TAMAMLANDI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- OĞUZHAN SOKAK -->
+        <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+          <div class="card border-0 rounded-0 hover-shadow">
+            <div class="card-img position-relative">
+              <img class="card-img-top rounded-0" src="images/projeler/oguzhan.jpg" alt="Oğuzhan Sokak Projesi">
+            </div>
+            <div class="card-body text-center">
+              <h4 class="card-title text-color">SEFAKÖY Söğütlüçeşme 1. Oğuzhan Sokak | 2017-2018</h4>
+              <p class="card-text mb-4 text-start">
+                Kat sayısı | 4 <br>
+                Bağımsız bölüm no | 8 Konut <br>
+                Toplam inşaat alanı | 453.61 m² <br>
+                Adres | Sefaköy Söğütlüçeşme 1. Oğuzhan Sk.
+              </p>
+              <div class="d-flex justify-content-center">
+                <span class="status-tag completed">TAMAMLANDI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TOSUN SOKAK -->
+        <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+          <div class="card border-0 rounded-0 hover-shadow">
+            <div class="card-img position-relative">
+              <img class="card-img-top rounded-0" src="images/projeler/tosun.jpg" alt="Tosun Sokak Projesi">
+            </div>
+            <div class="card-body text-center">
+              <h4 class="card-title text-color">BAŞAKŞEHİR Güvercintepe Tosun Sokak | 2017</h4>
+              <p class="card-text mb-4 text-start">
+                Kat sayısı | 5 <br>
+                Bağımsız bölüm no | 12 Konut <br>
+                Toplam inşaat alanı | 1.531,72 m² <br>
+                Adres | Başakşehir Güvercintepe Tosun Sk.
+              </p>
+              <div class="d-flex justify-content-center">
+                <span class="status-tag completed">TAMAMLANDI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2006. SOKAK -->
+        <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+          <div class="card border-0 rounded-0 hover-shadow">
+            <div class="card-img position-relative">
+              <img class="card-img-top rounded-0" src="images/projeler/2006.jpg" alt="2006. Sokak Projesi">
+            </div>
+            <div class="card-body text-center">
+              <h4 class="card-title text-color">SEFAKÖY Söğütlüçeşme 2006. Sokak | 2017</h4>
+              <p class="card-text mb-4 text-start">
+                Kat sayısı | 5 <br>
+                Bağımsız bölüm no | 8 Konut <br>
+                Toplam inşaat alanı | 684,48 m² <br>
+                Adres | Söğütlüçeşme 2006. Sokak
+              </p>
+              <div class="d-flex justify-content-center">
+                <span class="status-tag completed">TAMAMLANDI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BABİL SOKAK -->
+        <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+          <div class="card border-0 rounded-0 hover-shadow">
+            <div class="card-img position-relative">
+              <img class="card-img-top rounded-0" src="images/logo.jpg" alt="Babil Sokak Projesi">
+            </div>
+            <div class="card-body text-center">
+              <h4 class="card-title text-color">BABİL SOKAK | 2017</h4>
+              <p class="card-text mb-4 text-start">
+                Kat sayısı | 5 <br>
+                Bağımsız bölüm no | 6 Konut 2 İş Yeri <br>
+                Toplam inşaat alanı | 676.28 m² <br>
+                Adres | Mehmet Akif Mah. Babil Sokak
+              </p>
+              <div class="d-flex justify-content-center">
+                <span class="status-tag completed">TAMAMLANDI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- EREN SOKAK -->
+        <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+          <div class="card border-0 rounded-0 hover-shadow">
+            <div class="card-img position-relative">
+              <img class="card-img-top rounded-0" src="images/projeler/erensokak.jpg" alt="Eren Sokak Projesi">
+            </div>
+            <div class="card-body text-center">
+              <h4 class="card-title text-color">BAŞAKŞEHİR Altınşehir Eren Sokak | 2015 - 2016</h4>
+              <p class="card-text mb-4 text-start">
+                Kat sayısı | 6 <br>
+                Bağımsız bölüm no | 8 Konut <br>
+                Toplam inşaat alanı | 1.264,14 m² <br>
+                Adres | Başakşehir Altınşehir Mah. Eren Sokak (42)
+              </p>
+              <div class="d-flex justify-content-center">
+                <span class="status-tag completed">TAMAMLANDI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- KORUTÜRK SOKAK -->
+        <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+          <div class="card border-0 rounded-0 hover-shadow">
+            <div class="card-img position-relative">
+              <img class="card-img-top rounded-0" src="images/projeler/koruturk.jpg" alt="Korutürk Sokak Projesi">
+            </div>
+            <div class="card-body text-center">
+              <h4 class="card-title text-color">SEFAKÖY Söğütlüçeşme Mah. Korutürk Sokak | 2013</h4>
+              <p class="card-text mb-4 text-start">
+                Kat sayısı | 4 <br>
+                Bağımsız bölüm no | 8 Konut <br>
+                Toplam inşaat alanı | 1.044,64 m² <br>
+                Adres | Sefaköy Söğütlüçeşme Mah. Korutürk Sk.
+              </p>
+              <div class="d-flex justify-content-center">
+                <span class="status-tag completed">TAMAMLANDI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DEMİRKAPI CADDESİ -->
+        <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+          <div class="card border-0 rounded-0 hover-shadow">
+            <div class="card-img position-relative">
+              <img class="card-img-top rounded-0" src="images/projeler/demirkapi.jpg" alt="Demirkapı Caddesi Projesi">
+            </div>
+            <div class="card-body text-center">
+              <h4 class="card-title text-color">HALKALI Küçükçekmece | 2013-2014</h4>
+              <p class="card-text mb-4 text-start">
+                Kat sayısı | 4 <br>
+                Bağımsız bölüm no | 8 Konut <br>
+                Toplam inşaat alanı | 695,40 m² <br>
+                Adres | Halkalı Küçükçekmece Demirkapı Caddesi
+              </p>
+              <div class="d-flex justify-content-center">
+                <span class="status-tag completed">TAMAMLANDI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- KATİP SOKAK -->
+        <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+          <div class="card border-0 rounded-0 hover-shadow">
+            <div class="card-img position-relative">
+              <img class="card-img-top rounded-0" src="images/logo.jpg" alt="Katip Sokak Projesi">
+            </div>
+            <div class="card-body text-center">
+              <h4 class="card-title text-color">KATİP SOKAK | 2012</h4>
+              <p class="card-text mb-4 text-start">
+                Kat sayısı | 5 <br>
+                Bağımsız bölüm no | 8 Konut <br>
+                Toplam inşaat alanı | 828,74 m² <br>
+                Adres | Halkalı Merkez Mah. Katip Sokak
+              </p>
+              <div class="d-flex justify-content-center">
+                <span class="status-tag completed">TAMAMLANDI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- /course list -->
+
+
       </div>
-    </div>
-  </div>
-</div>
-
-<!-- CIVRAZ APT. -->
-<div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-  <div class="card border-0 rounded-0 hover-shadow">
-    <div class="card-img position-relative">
-      <img class="card-img-top rounded-0" src="images/projeler/calikusu-civraz.jpg" alt="Civraz Apartmanı Projesi">
-    </div>
-    <div class="card-body text-center">
-      <h4 class="card-title text-color">CIVRAZ APT. | 2021</h4>
-      <p class="card-text mb-4 text-start">
-        Kat sayısı | 4 <br>
-        Bağımsız bölüm no | 8 Konut <br>
-        Toplam inşaat alanı | 965.20 m² <br>
-        Adres | Başakşehir Güvercintepe Mah.
-      </p>
-      <div class="d-flex justify-content-center">
-        <span class="status-tag completed">TAMAMLANDI</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ŞEN SOKAK -->
-<div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-  <div class="card border-0 rounded-0 hover-shadow">
-    <div class="card-img position-relative">
-      <img class="card-img-top rounded-0" src="images/projeler/sen-sokak.jpg" alt="Şen Sokak Projesi">
-    </div>
-    <div class="card-body text-center">
-      <h4 class="card-title text-color">BAŞAKŞEHİR Güvercintepe Şen Sokak | 2017</h4>
-      <p class="card-text mb-4 text-start">
-        Kat sayısı | 4 <br>
-        Bağımsız bölüm no | 8 Konut <br>
-        Toplam inşaat alanı | 588.25 m² <br>
-        Adres | Başakşehir Güvercintepe Şen Sokak
-      </p>
-      <div class="d-flex justify-content-center">
-        <span class="status-tag completed">TAMAMLANDI</span>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- OĞUZHAN SOKAK -->
-<div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-  <div class="card border-0 rounded-0 hover-shadow">
-    <div class="card-img position-relative">
-      <img class="card-img-top rounded-0" src="images/projeler/oguzhan.jpg" alt="Oğuzhan Sokak Projesi">
-    </div>
-    <div class="card-body text-center">
-      <h4 class="card-title text-color">SEFAKÖY Söğütlüçeşme 1. Oğuzhan Sokak | 2017-2018</h4>
-      <p class="card-text mb-4 text-start">
-        Kat sayısı | 4 <br>
-        Bağımsız bölüm no | 8 Konut <br>
-        Toplam inşaat alanı | 453.61 m² <br>
-        Adres | Sefaköy Söğütlüçeşme 1. Oğuzhan Sk.
-      </p>
-      <div class="d-flex justify-content-center">
-        <span class="status-tag completed">TAMAMLANDI</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- TOSUN SOKAK -->
-<div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-  <div class="card border-0 rounded-0 hover-shadow">
-    <div class="card-img position-relative">
-      <img class="card-img-top rounded-0" src="images/projeler/tosun.jpg" alt="Tosun Sokak Projesi">
-    </div>
-    <div class="card-body text-center">
-      <h4 class="card-title text-color">BAŞAKŞEHİR Güvercintepe Tosun Sokak | 2017</h4>
-      <p class="card-text mb-4 text-start">
-        Kat sayısı | 5 <br>
-        Bağımsız bölüm no | 12 Konut <br>
-        Toplam inşaat alanı | 1.531,72 m² <br>
-        Adres | Başakşehir Güvercintepe Tosun Sk.
-      </p>
-      <div class="d-flex justify-content-center">
-        <span class="status-tag completed">TAMAMLANDI</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- 2006. SOKAK -->
-<div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-  <div class="card border-0 rounded-0 hover-shadow">
-    <div class="card-img position-relative">
-      <img class="card-img-top rounded-0" src="images/projeler/2006.jpg" alt="2006. Sokak Projesi">
-    </div>
-    <div class="card-body text-center">
-      <h4 class="card-title text-color">SEFAKÖY Söğütlüçeşme 2006. Sokak | 2017</h4>
-      <p class="card-text mb-4 text-start">
-        Kat sayısı | 5 <br>
-        Bağımsız bölüm no | 8 Konut <br>
-        Toplam inşaat alanı | 684,48 m² <br>
-        Adres | Söğütlüçeşme 2006. Sokak
-      </p>
-      <div class="d-flex justify-content-center">
-        <span class="status-tag completed">TAMAMLANDI</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- BABİL SOKAK -->
-<div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-  <div class="card border-0 rounded-0 hover-shadow">
-    <div class="card-img position-relative">
-      <img class="card-img-top rounded-0" src="images/logo.jpg" alt="Babil Sokak Projesi">
-    </div>
-    <div class="card-body text-center">
-      <h4 class="card-title text-color">BABİL SOKAK | 2017</h4>
-      <p class="card-text mb-4 text-start">
-        Kat sayısı | 5 <br>
-        Bağımsız bölüm no | 6 Konut 2 İş Yeri <br>
-        Toplam inşaat alanı | 676.28 m² <br>
-        Adres | Mehmet Akif Mah. Babil Sokak
-      </p>
-      <div class="d-flex justify-content-center">
-        <span class="status-tag completed">TAMAMLANDI</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- EREN SOKAK -->
-<div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-  <div class="card border-0 rounded-0 hover-shadow">
-    <div class="card-img position-relative">
-      <img class="card-img-top rounded-0" src="images/projeler/erensokak.jpg" alt="Eren Sokak Projesi">
-    </div>
-    <div class="card-body text-center">
-      <h4 class="card-title text-color">BAŞAKŞEHİR Altınşehir Eren Sokak | 2015 - 2016</h4>
-      <p class="card-text mb-4 text-start">
-        Kat sayısı | 6 <br>
-        Bağımsız bölüm no | 8 Konut <br>
-        Toplam inşaat alanı | 1.264,14 m² <br>
-        Adres | Başakşehir Altınşehir Mah. Eren Sokak (42)
-      </p>
-      <div class="d-flex justify-content-center">
-        <span class="status-tag completed">TAMAMLANDI</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- KORUTÜRK SOKAK -->
-<div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-  <div class="card border-0 rounded-0 hover-shadow">
-    <div class="card-img position-relative">
-      <img class="card-img-top rounded-0" src="images/projeler/koruturk.jpg" alt="Korutürk Sokak Projesi">
-    </div>
-    <div class="card-body text-center">
-      <h4 class="card-title text-color">SEFAKÖY Söğütlüçeşme Mah. Korutürk Sokak | 2013</h4>
-      <p class="card-text mb-4 text-start">
-        Kat sayısı | 4 <br>
-        Bağımsız bölüm no | 8 Konut <br>
-        Toplam inşaat alanı | 1.044,64 m² <br>
-        Adres | Sefaköy Söğütlüçeşme Mah. Korutürk Sk.
-      </p>
-      <div class="d-flex justify-content-center">
-        <span class="status-tag completed">TAMAMLANDI</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- DEMİRKAPI CADDESİ -->
-<div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-  <div class="card border-0 rounded-0 hover-shadow">
-    <div class="card-img position-relative">
-      <img class="card-img-top rounded-0" src="images/projeler/demirkapi.jpg" alt="Demirkapı Caddesi Projesi">
-    </div>
-    <div class="card-body text-center">
-      <h4 class="card-title text-color">HALKALI Küçükçekmece | 2013-2014</h4>
-      <p class="card-text mb-4 text-start">
-        Kat sayısı | 4 <br>
-        Bağımsız bölüm no | 8 Konut <br>
-        Toplam inşaat alanı | 695,40 m² <br>
-        Adres | Halkalı Küçükçekmece Demirkapı Caddesi
-      </p>
-      <div class="d-flex justify-content-center">
-        <span class="status-tag completed">TAMAMLANDI</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- KATİP SOKAK -->
-<div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-  <div class="card border-0 rounded-0 hover-shadow">
-    <div class="card-img position-relative">
-      <img class="card-img-top rounded-0" src="images/logo.jpg" alt="Katip Sokak Projesi">
-    </div>
-    <div class="card-body text-center">
-      <h4 class="card-title text-color">KATİP SOKAK | 2012</h4>
-      <p class="card-text mb-4 text-start">
-        Kat sayısı | 5 <br>
-        Bağımsız bölüm no | 8 Konut <br>
-        Toplam inşaat alanı | 828,74 m² <br>
-        Adres | Halkalı Merkez Mah. Katip Sokak
-      </p>
-      <div class="d-flex justify-content-center">
-        <span class="status-tag completed">TAMAMLANDI</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-      <!-- /course list -->
-
-
-    </div>
   </section>
-  <!-- /courses -->
+  <!-- /projects bitiş -->
 
   <!-- İLETİŞİM -->
   <section id="iletisim" class="section bg-light py-5">
@@ -1029,59 +745,60 @@ Projelerimizin her aşamasında açık ve dürüst bir çalışma anlayışı be
         </div>
 
         <!-- İletişim bilgileri -->
-    <div class="col-lg-5">
-  <div class="bg-white shadow-sm rounded p-4 h-100 d-flex flex-column justify-content-between">
-    <div>
-      <h4 class="mb-3 text-primary">FİDANAY İNŞAAT</h4>
-      <p><i class="ti-location-pin text-primary mr-2"></i> Mehmet Akif Mahallesi Aşık Veysel Cad, Şair Ahmet Sk. No:19 D:B, 34307 Küçükçekmece/İstanbul</p>
-      
-      <p><i class="ti-mobile text-primary mr-2"></i> 
-        <a href="tel:+905515991021" class="text-dark">0551 599 10 21 (Mobil)</a>
-      </p>
+        <div class="col-lg-5">
+          <div class="bg-white shadow-sm rounded p-4 h-100 d-flex flex-column justify-content-between">
+            <div>
+              <h4 class="mb-3 text-primary">FİDANAY İNŞAAT</h4>
+              <p><i class="ti-location-pin text-primary mr-2"></i> Mehmet Akif Mahallesi Aşık Veysel Cad, Şair Ahmet Sk.
+                No:19 D:B, 34307 Küçükçekmece/İstanbul</p>
 
-      <p><i class="ti-headphone text-primary mr-2"></i> 
-        <a href="tel:+902124712814" class="text-dark">0212 471 28 14 (Ofis)</a>
-      </p>
+              <p><i class="ti-mobile text-primary mr-2"></i>
+                <a href="tel:+905515991021" class="text-dark">0551 599 10 21 (Mobil)</a>
+              </p>
 
-      <p><i class="ti-email text-primary mr-2"></i> 
-        <a href="mailto:info@fidanayinsaat.com" class="text-dark">info@fidanayinsaat.com</a>
-      </p>
-    </div>
+              <p><i class="ti-headphone text-primary mr-2"></i>
+                <a href="tel:+902124712814" class="text-dark">0212 471 28 14 (Ofis)</a>
+              </p>
 
-    <!-- Sosyal medya -->
-    <div class="mt-4">
-      <h5 class="mb-3">Bizi Takip Edin</h5>
-      <div class="d-flex align-items-right social-icons col-sm-5 text-sm-right text-center">
-        <a href="https://www.instagram.com/fidanayinsaat/" target="_blank" class="nav-icon nav-icon-effect"
-          style="font-size:1.6rem; color:#E1306C; padding:0.25rem;">
-          <i class="bi bi-instagram"></i>
-        </a>
-        <a href="https://www.facebook.com/famsaninsaatgayrimenkul/" target="_blank"
-          class="nav-icon nav-icon-effect" style="font-size:1.6rem; color:#1877F2; padding:0.25rem;">
-          <i class="bi bi-facebook"></i>
-        </a>
-        <a href="https://wa.me/905515991021" target="_blank" class="nav-icon nav-icon-effect"
-          style="font-size:1.6rem; color:#25D366; padding:0.25rem;">
-          <i class="bi bi-whatsapp"></i>
-        </a>
-        <a href="tel:+905515991021" class="nav-icon nav-icon-effect"
-          style="font-size:1.6rem; color:#0d6efd; padding:0.25rem;">
-          <i class="bi bi-telephone-fill"></i>
-        </a>
-      </div>
+              <p><i class="ti-email text-primary mr-2"></i>
+                <a href="mailto:info@fidanayinsaat.com" class="text-dark">info@fidanayinsaat.com</a>
+              </p>
+            </div>
 
-      <!-- WhatsApp butonu -->
-      <a href="https://wa.me/905515991021" class="btn btn-success btn-block mt-3">
-        <i class="ti-comments mr-2"></i> WhatsApp ile Mesaj Gönder
-      </a>
+            <!-- Sosyal medya -->
+            <div class="mt-4">
+              <h5 class="mb-3">Bizi Takip Edin</h5>
+              <div class="d-flex align-items-right social-icons col-sm-5 text-sm-right text-center">
+                <a href="https://www.instagram.com/fidanayinsaat/" target="_blank" class="nav-icon nav-icon-effect"
+                  style="font-size:1.6rem; color:#E1306C; padding:0.25rem;">
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/famsaninsaatgayrimenkul/" target="_blank"
+                  class="nav-icon nav-icon-effect" style="font-size:1.6rem; color:#1877F2; padding:0.25rem;">
+                  <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://wa.me/905515991021" target="_blank" class="nav-icon nav-icon-effect"
+                  style="font-size:1.6rem; color:#25D366; padding:0.25rem;">
+                  <i class="bi bi-whatsapp"></i>
+                </a>
+                <a href="tel:+905515991021" class="nav-icon nav-icon-effect"
+                  style="font-size:1.6rem; color:#0d6efd; padding:0.25rem;">
+                  <i class="bi bi-telephone-fill"></i>
+                </a>
+              </div>
 
-      <!-- Telefonla Ara butonu -->
-      <a href="tel:+905515991021" class="btn btn-primary btn-block mt-2">
-        <i class="bi bi-telephone-fill mr-2"></i> Telefonla Ara
-      </a>
-    </div>
-  </div>
-</div>
+              <!-- WhatsApp butonu -->
+              <a href="https://wa.me/905515991021" class="btn btn-success btn-block mt-3">
+                <i class="ti-comments mr-2"></i> WhatsApp ile Mesaj Gönder
+              </a>
+
+              <!-- Telefonla Ara butonu -->
+              <a href="tel:+905515991021" class="btn btn-primary btn-block mt-2">
+                <i class="bi bi-telephone-fill mr-2"></i> Telefonla Ara
+              </a>
+            </div>
+          </div>
+        </div>
 
       </div>
     </div>
@@ -1111,34 +828,7 @@ Projelerimizin her aşamasında açık ve dürüst bir çalışma anlayışı be
               | Tüm Hakları saklıdır | FİDANAY İNŞAAT</a>
             </p>
           </div>
-          <!-- <div class="col-sm-5 text-sm-right text-center">
-          <ul class="list-inline">
-            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://facebook.com/themefisher/"><i class="ti-facebook text-primary"></i></a></li>
-            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://twitter.com/themefisher"><i class="ti-twitter-alt text-primary"></i></a></li>
-            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://github.com/themefisher"><i class="ti-github text-primary"></i></a></li>
-            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://instagram.com/themefisher/"><i class="ti-instagram text-primary"></i></a></li>
-          </ul>
-        </div> -->
 
-          <!-- Sosyal medya ve iletişim ikonları -->
-          <!-- <div class="d-flex align-items-right social-icons col-sm-5 text-sm-right text-center">
-            <a href="https://www.instagram.com/fidanayinsaat/" target="_blank" class="nav-icon nav-icon-effect"
-              style="font-size:1.6rem; color:#E1306C; padding:0.25rem;">
-              <i class="bi bi-instagram"></i>
-            </a>
-            <a href="https://www.facebook.com/famsaninsaatgayrimenkul/" target="_blank" class="nav-icon nav-icon-effect"
-              style="font-size:1.6rem; color:#1877F2; padding:0.25rem;">
-              <i class="bi bi-facebook"></i>
-            </a>
-            <a href="https://wa.me/905515991021" target="_blank" class="nav-icon nav-icon-effect"
-              style="font-size:1.6rem; color:#25D366; padding:0.25rem;">
-              <i class="bi bi-whatsapp"></i>
-            </a>
-            <a href="tel:+905515991021" class="nav-icon nav-icon-effect"
-              style="font-size:1.6rem; color:#0d6efd; padding:0.25rem;">
-              <i class="bi bi-telephone-fill"></i>
-            </a>
-          </div> -->
 
 
         </div>
@@ -1167,11 +857,30 @@ Projelerimizin her aşamasında açık ve dürüst bir çalışma anlayışı be
   <script src="js/script.js"></script>
 
   <a href="https://wa.me/905515991021" class="whatsapp-float" target="_blank">
-  <i class="bi bi-whatsapp"></i>
-</a>
-<a href="tel:+905515991021" class="phone-float" target="_blank">
-  <i class="bi bi-telephone-fill"></i>
-</a>
+    <i class="bi bi-whatsapp"></i>
+  </a>
+  <a href="tel:+905515991021" class="phone-float" target="_blank">
+    <i class="bi bi-telephone-fill"></i>
+  </a>
+
+
+  <!-- Sayfanın en altına, </body> öncesi ekleyin -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Navbar collapse içerisindeki tüm linkleri seç
+      var navLinks = document.querySelectorAll('.navbar-collapse .nav-link, .navbar-collapse .dropdown-item');
+
+      navLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
+          var navbarCollapse = document.querySelector('.navbar-collapse');
+          if (navbarCollapse.classList.contains('show')) {
+            // Bootstrap collapse toggle ile menüyü kapat
+            new bootstrap.Collapse(navbarCollapse).toggle();
+          }
+        });
+      });
+    });
+  </script>
 
 
 </body>
