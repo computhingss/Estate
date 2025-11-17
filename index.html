@@ -88,6 +88,39 @@
     z-index: 0;
   }
 
+ .brand-logo{
+  width: 50px;
+  height: auto;
+  margin-right: 0.7rem;
+  display: block;
+}
+
+/* GOLD ton – kaliteli görünüm için degrade değil düz altın (#D4AF37) kullandım */
+.brand-text{
+  line-height: 1;
+  color: #D4AF37;               /* gold */
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-weight: 800;             /* çok daha vurgulu */
+  font-size: 1.35rem;           /* belirgin büyük */
+  letter-spacing: 0.5px;        /* hafif nefes aldırır */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-transform: uppercase;    /* güçlü görünüm */
+}
+
+.brand-sub{
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #e7c766;               /* daha açık gold tonu */
+  letter-spacing: 1px;
+}
+
+
+
+
+
+
 
 </style> 
 
@@ -104,7 +137,12 @@
     <div class="navigation w-100">
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-dark p-0">
-          <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" style="width: 95px;"></a>
+<a class="navbar-brand d-flex align-items-center" href="index.html">
+  <img src="images/logo.png" alt="Fidanay İnşaat" class="brand-logo">
+  <span class="brand-text">
+    FİDANAY<br><small class="brand-sub">İNŞAAT</small>
+  </span>
+</a>
           <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
             aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -218,9 +256,7 @@
             ilişkiler kurmaya önem veriyoruz. Vizyonumuz; güven, şeffaflık ve sürdürülebilirliği esas alarak sektöre
             değer katmak, misyonumuz ise modern ve sağlam yapılarla geleceğin şehirlerine katkı sunmaktır.
           </p>
-          <p class="mt-2">
-            “Güvenin temelinde biz varız.” diyerek, bugün olduğu gibi gelecekte de güven veren bir marka olma
-            kararlılığımızı sürdürüyoruz. </p>
+       
 
         </div>
       </div>
@@ -281,7 +317,7 @@
             </div>
             <h4 class="mb-3 fw-semibold text-dark">Taahhütlü İnşaat</h4>
             <p class="text-secondary">
-              Finansmanını sizin sağladığınız projeleri planlıyor ve anahtar teslim şekilde tamamlıyoruz.
+              Finansmanı sizin sağladığınız projeleri planlıyor ve imara uygun yönetmelikle anahtar teslimi tamamlıyoruz.
             </p>
           </div>
         </div>
@@ -301,19 +337,7 @@
           </div>
         </div>
 
-        <!-- Tasarım & Projelendirme -->
-        <div class="col-lg-4 col-md-6">
-          <div class="service-card text-center p-5 rounded-4 h-100 border-0"
-            style="background: #fff; box-shadow: 0 8px 25px rgba(0,0,0,0.05); transition: all 0.35s ease;">
-            <div class="icon-wrapper mb-4 mx-auto">
-              <i class="bi bi-rulers"></i>
-            </div>
-            <h4 class="mb-3 fw-semibold text-dark">Tasarım & Projelendirme</h4>
-            <p class="text-secondary">
-              Müşteriye özel 2D-3D mimari proje, plan, render ve tasarım çözümleri sunuyoruz.
-            </p>
-          </div>
-        </div>
+        
 
       </div>
     </div>
